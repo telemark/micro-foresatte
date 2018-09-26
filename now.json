@@ -1,0 +1,11 @@
+{
+  "name": "micro-foresatte",
+  "alias": [
+    "foresatte.service.t-fk.no"
+  ],
+  "type": "docker",
+  "dotenv": "production.env",
+  "features": {
+    "cloud": "v2"
+  }
+}

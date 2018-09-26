@@ -1,0 +1,71 @@
+{
+  "name": "micro-foresatte",
+  "description": "Get guardian for a person",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "contributors": [
+    {
+      "name": "Jonas Maccyber Enge",
+      "email": "jonas.enge@gmail.com",
+      "url": "https://github.com/maccyber"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.11.0"
+  },
+  "scripts": {
+    "test": "standard && npm audit && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "start": "micro",
+    "dev": "micro-dev -H localhost",
+    "deploy": "npm test && now && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "foresatte",
+    "api",
+    "dsf",
+    "Det sentrale folkeregisteret"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/micro-foresatte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/micro-foresatte/issues"
+  },
+  "homepage": "https://github.com/telemark/micro-foresatte#readme",
+  "devDependencies": {
+    "ava": "0.25.0",
+    "coveralls": "3.0.2",
+    "micro-dev": "3.0.0",
+    "nyc": "13.0.1",
+    "standard": "12.0.1",
+    "test-listen": "1.1.0"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "cors": "2.8.4",
+    "express-jwt": "5.3.1",
+    "finalhandler": "1.1.1",
+    "is-valid-fodselsnummer": "3.0.2",
+    "jsonwebtoken": "8.3.0",
+    "markdown-it": "8.4.2",
+    "micro": "9.3.3",
+    "node-cache": "4.2.0",
+    "router": "1.3.3",
+    "tfk-dsf-normalize-contact": "2.3.0"
+  }
+}
