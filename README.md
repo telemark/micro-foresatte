@@ -13,7 +13,7 @@ All calls must supply a valid jwt
 
 **fnr** Official Norwegian personal id-number
 
-### ```POST /foresatte
+### ```POST /foresatte```
 
 ```JavaScript
 {
