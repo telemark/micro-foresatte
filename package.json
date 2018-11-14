@@ -61,7 +61,7 @@
     "express-jwt": "5.3.1",
     "finalhandler": "1.1.1",
     "is-valid-fodselsnummer": "3.0.2",
-    "jsonwebtoken": "8.3.0",
+    "jsonwebtoken": "8.4.0",
     "markdown-it": "8.4.2",
     "micro": "9.3.3",
     "node-cache": "4.2.0",
