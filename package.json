@@ -62,7 +62,7 @@
     "express-jwt": "5.3.1",
     "finalhandler": "1.1.2",
     "get-age": "1.0.1",
-    "is-valid-fodselsnummer": "3.0.3",
+    "is-valid-fodselsnummer": "3.0.5",
     "jsonwebtoken": "8.5.1",
     "markdown-it": "8.4.2",
     "micro": "9.3.4",
